@@ -15,6 +15,10 @@ public class PeladoApplication {
 
 	@GetMapping("/")
 	public String hola() {
-		return String.format("¡Hola!");
+		int a = 4;
+		int b = 34;
+		float c = b / a;
+		// return String.format("c = b / a = %f", c);
+		return Float.toString(c);
 	}
 }
