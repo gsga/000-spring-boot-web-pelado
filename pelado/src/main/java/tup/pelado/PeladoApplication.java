@@ -13,12 +13,20 @@ public class PeladoApplication {
 		SpringApplication.run(PeladoApplication.class, args);
 	}
 
-	@GetMapping("/")
-	public String hola() {
-		int a = 4;
-		int b = 34;
-		float c = b / a;
-		// return String.format("c = b / a = %f", c);
-		return Float.toString(c);
-	}
+	
+    @GetMapping("/")
+    public String porDefecto() {
+        return "porDefecto()";
+    }
+
+    @GetMapping("1")
+    public String func1() {
+        return "func1()";
+    }
+
+    @GetMapping("2")
+    public String func2() {
+        return "func2()";
+    }
+
 }
